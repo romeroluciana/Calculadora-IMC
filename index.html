@@ -32,7 +32,7 @@
         let calcularindice = () => {
         let ingresoPeso = document.getElementById("peso").value;
         let ingresoAltura = document.getElementById("estatura").value;
-        let imc = parseFloat(ingresoPeso / (ingresoAltura*ingresoAltura));
+        let imc = parseFloat(ingresoPeso / (ingresoAltura*ingresoAltura)).toFixed(1);
         let variableresultado = document.getElementById("resultado")
         variableresultado.innerHTML=variableresultado.innerHTML+imc
 
