@@ -7,6 +7,46 @@
     <link href="normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Calculadora IMC</title>
+
+</head>
+<body>
+    <h1>Calculadora de índice de masa corporal</h1>
+
+   <div>
+     <p>Para calcular su IMC, ingrese su estatura y peso.</p>
+
+     <label>Estatura</label> <br>
+     <input id="estatura" type="number" placeholder="Estatura"> <br>
+
+     <label>Peso</label> <br>
+     <input  id="peso" type="number" placeholder="Peso en kilogramos"> <br>
+
+     <button id="boton">Calcular</button>
+   </div>
+
+     <p id="resultado">Tu imc es: </p>
+     <p id ="clasif"></p>
+  
+    <!--let peso = parseFloat (prompt("Ingrese su peso en kg."));
+
+    let altura = parseFloat (prompt("Ingrese su altura"));
+
+    let imc = (peso / (altura*altura));
+
+    document.write("Su IMC es de " +  Math.round(imc));
+
+    if (imc<18){
+        document.write(" Peso inferior al normal")
+    }
+    else if(imc>=18 && imc<24){
+        document.write(" Su clasificación es: peso normal")
+    }
+    else if (imc>=24 && imc<29){
+        document.write(" Su clasificación es: peso superior al normal")
+    }
+    else{
+        document.write(" Su clasificación es: obesidad")
+    }*/-->
     <script>
         let calcularindice = () => {
         let ingresoPeso = document.getElementById("peso").value;
@@ -33,50 +73,6 @@
         boton.addEventListener('click', calcularindice);
 
     </script>
-</head>
-<body>
-    <h1>Calculadora de índice de masa corporal</h1>
-
-   <div>
-     <p>Para calcular su IMC, ingrese su estatura y peso.</p>
-
-     <label>Estatura</label> <br>
-     <input id="estatura" type="number" placeholder="Estatura"> <br>
-
-     <label>Peso</label> <br>
-     <input  id="peso" type="number" placeholder="Peso en kilogramos"> <br>
-
-     <button id="boton">Calcular</button>
-   </div>
-
-     <p id="resultado">Tu imc es: </p>
-     <p id ="clasif"></p>
-  
-
-
-
-
-
-    <!--let peso = parseFloat (prompt("Ingrese su peso en kg."));
-
-    let altura = parseFloat (prompt("Ingrese su altura"));
-
-    let imc = (peso / (altura*altura));
-
-    document.write("Su IMC es de " +  Math.round(imc));
-
-    if (imc<18){
-        document.write(" Peso inferior al normal")
-    }
-    else if(imc>=18 && imc<24){
-        document.write(" Su clasificación es: peso normal")
-    }
-    else if (imc>=24 && imc<29){
-        document.write(" Su clasificación es: peso superior al normal")
-    }
-    else{
-        document.write(" Su clasificación es: obesidad")
-    }*/-->
 
     
 </body>
